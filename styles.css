@@ -2,7 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
 }
 
 header {
@@ -18,7 +23,6 @@ p {
 }
 
 .time {
-    font-size: 2em;
+    font-size: 4em;
     text-align: center;
-    margin-top: 20px;
 }
