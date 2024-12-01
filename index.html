@@ -11,5 +11,15 @@
         <h1>Welcome to My Simple Website</h1>
     </header>
     <p>This is a simple website created using HTML and CSS.</p>
+    <div class="time" id="time"></div>
+    <script>
+        function updateTime() {
+            const options = { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            const timeString = new Intl.DateTimeFormat('en-US', options).format(new Date());
+            document.getElementById('time').textContent = timeString;
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
 </body>
 </html>
